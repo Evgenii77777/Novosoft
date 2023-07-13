@@ -37,13 +37,14 @@ export const TodoItem = ({ todo }: TodoProps) => {
       )}
       {todo.edited && (
         <input
+          className={styles.editInput}
           onChange={(e) =>
             dispatch(editTodo({ text: e.target.value, id: todo.id }))
           }
           value={todo.text}
         />
       )}
-      <div>
+      <div className={styles.wrapper}>
         <Button
           img={todo.edited ? save : edit}
           alt={todo.edited ? "save" : "edit"}

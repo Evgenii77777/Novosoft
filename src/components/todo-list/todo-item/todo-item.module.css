@@ -21,6 +21,14 @@
   opacity: 0.5;
 }
 
+.editInput {
+  width: 60%;
+}
+
+.wrapper {
+  display: flex;
+}
+
 @media (max-width: 719.99px) {
   .item {
     flex-direction: column;
