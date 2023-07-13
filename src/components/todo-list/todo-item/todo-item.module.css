@@ -1,0 +1,29 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: rgba(90, 40, 184, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  border-radius: 10px;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 20px;
+}
+
+.done {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+@media (max-width: 719.99px) {
+  .item {
+    flex-direction: column;
+    align-items: center;
+  }
+}
